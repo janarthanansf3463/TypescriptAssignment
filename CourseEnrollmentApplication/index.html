@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Application</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <br>
+        <br>
+        <br>
+        <button id="newuserbutton" onclick="newuserfunction()">NewUser</button>
+        <button id="loginbutton" onclick="loginfunction()">Login</button>
+    </div>
+    <div id="newuser">
+        <br>
+        <br>
+        <br>
+        <h2>New User</h2>
+        <label for="name">Username</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age">
+        <br>
+        <br>
+        <label for="phonenumber">Phonenumber</label>
+        <input type="number" id="phonenumber">
+        <button id="register" onclick="registerfunction()">Register</button>
+    </div>
+    <br>
+    <br>
+    <div id="Login">
+        <br>
+        <br>
+        <br>
+        <h2>Login</h2>
+        <label for="userId">UserId</label>
+        <input type="text" id="userId">
+        <button id="login" onclick="loginfunction2()">Login</button>
+    </div>
+    <br>
+    <br>
+    <div id="coursedetails">
+        <br>
+        <br>
+        <br>
+        <h2>Details</h2>
+        <button id="availablecourse" onclick="availablecourse()">Available Course</button>
+        <button id="enrolledcourse" onclick="enrolledcourse()">Enrolled Course</button>
+    </div>
+    <div id="checkbox_available">
+        <br>
+        <br>
+        <br>
+        <h1>Available Courses</h1>
+        <input type="checkbox" name="C#" id="csharp" onclick="csharpfunction()" value="Csharp"><label for="csharp">C#</label><label id="c#days"></label>
+        <br>
+        <br>
+        <input type="checkbox" name="HTML" id="html" onclick="htmlfunction()" value="HTML"><label for="html">HTML</label><label id="htmldays"></label>
+        <br>
+        <br>
+        <input type="checkbox" name="CSS" id="css" onclick="cssfunction()" value="CSS"><label for="css">CSS</label><label id="cssdays"></label>
+        <br>
+        <br>
+        <input type="checkbox" name="JAVASCRIPT" id="javascript" onclick="javascriptfunction()" value="JAVASCRIPT"><label for="javascript">JAVASCRIPT</label><label id="javascriptdays"></label>
+        <br>
+        <br>
+        <input type="checkbox" name="TYPESCRIPT" id="typescript" onclick="typescript()" value="TYPESCRIPT"><label for="typescript">TYPESCRIPT</label><label id="typescriptdays"></label>
+        <br>
+        <br>
+        <button id="enrolledbutton" onclick="enrolledbuttonfunction()">Enrolled</button>
+
+    </div>
+    <div id="enrolled">
+        <h1>Values</h1>
+       <label id="message"></label>
+       <h1 id="totaldays"></h1>
+       <button id="close" onclick="closefunction()">Close</button>
+    </div>
+</body>
+</html>

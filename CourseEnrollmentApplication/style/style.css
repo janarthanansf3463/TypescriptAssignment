@@ -1,0 +1,13 @@
+label{
+    color: brown;
+}
+button{
+    background-color: chocolate;
+    color: white;
+}
+#newuser,#Login,#coursedetails,#checkbox_available,#enrolled{
+    display: none;
+}
+#csharpdays,#htmldays,#cssdays,#javascript,#typescript{
+    padding-left: 40px;
+}
